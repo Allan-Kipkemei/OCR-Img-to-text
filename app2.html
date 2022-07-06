@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="app2.css">
+<script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+<script type="text/javascript" src="https://unpkg.com/tesseract.js@v2.0.0-beta.1/dist/tesseract.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<script type="text/javascript">
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+</script>
+</head>
+<body>
+<div id="header">
+ <li id="site_name">Veryfi inc.com</li>
+ <li onclick="scrollto('home');">HOME</li>
+ <li onclick="scrollto('about');">ABOUT</li>
+ <li onclick="scrollto('#contact');">CONTACT</li>
+ <li onclick="scrollto('contact');">PROFILE</li>
+ <i class='fas fa-user-alt' style='font-size:36px'></i>
+</div>
+
+<div id='home'>
+ <h1>VISITORS DETAILS</p></h1>
+ <button style="height:40px ;width: 105px;" class="btn">CHECK IN </button> 
+ <button style="height:40px ;width: 105px;" class="btn1">CHECK OUT </button> <br><br><br>
+ <input type="file" placeholder="Name"><i class="fa-solid fa-camea"></i>
+ <button class="btn6"> <a class="btn7" href="ap.html" target="new"  style="border-radius:20px ; margin :10px 10px 10px;"> HERE TO VERIFY YOUR DETAILS</a></button>
+ <p></p>
+</div>
+<div id="contact">
+<h1>If you have any question or query you can contact us at <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right" style="color: white;"></i><a href= "mailto:allankiplgat@gmail.com"> allankiplgat@gmail.com <br><p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><a href=" tel: +254710251692"> Phone: +254710251692</p> </a></h2> <br> </h1>
+<input id="input" type="text" placeholder="Name">
+<button  id="input-btn">SAVE</button>
+<ul id="btn-el"></ul>
+<script src="input.js"></script>
+<textarea placeholder="Message"></textarea> <input id="btn9" type="submit" value="SEND" style="border-radius:20px ;">
+</div>
+
+<footer class="footer">
+    <h1>Follow us on social media</h1>
+    <div id="socials">
+    <i class="fa fa-instagram"style=font-size:25px></i>
+    <i class="fa fa-twitter"style=font-size:25px></i>
+    <i class="fa fa-linkedin"style=font-size:25px></i>
+    <i class="fa fa-vine hover:white" style=font-size:25px></i>
+    <i class="fa fa-whatsapp "style=font-size:25px ></i>
+   
+</div>
+</footer>  
+<script src="tes"> </script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+  
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <div class="right">
+  <a class="fas fa-user-alt" href="#profile">profile</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+
+<div data-aos="flip-right" class="content">
+  <h1>GUARDIANS SMART</h1>
+    <div class="v-details">
+        <U><h1>Visitors details</h1></U><hr>
+             <input class="in" type="button" value="CHECK IN">       
+             <input class="out" type="button" value="CHECK OUT"><br><br>
+             <input class="fa fa-camera" type="file" value="">
+             <button onclick="Yes()"
+             </div>     
+    </div>
+  
+      </div>
+  </div>
+<script src="main.js"></script><br><br><br>
+<footer class="footer"
+  <p>FIND US ON SOCIALS <BR>
+  <a class="fa fa-twitter"></a>
+  <a class="fa fa-facebook"></a>
+  <a class="fa fa-vine"></a>
+  <a class="fa fa-linkedin"></a>
+  <a class="fa fa-instagram"></a>
+</footer>
+<script>
+  
+  const exampleImage = 'url.jpg';
+
+const worker = Tesseract.createWorker({
+  logger: m => console.log(m)
+});
+Tesseract.setLogging(true);
+work();
+
+async function work() {
+  await worker.load();
+  await worker.loadLanguage('eng');
+  await worker.initialize('eng');
+
+ 
+  result = await worker.recognize(exampleImage);
+  console.log(result.data);
+
+  await worker.terminate();
+}
+</script>
+
+
+</body>
+</html>
+
+
